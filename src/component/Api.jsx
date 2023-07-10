@@ -27,18 +27,19 @@ const Api =()=>{
         }  
     return (
         <>
-        <div id='div'> 
+        <div className='col-lg-5 mt-5 mx-auto'> 
+        <h1 className='text-center text-light'>OPEN WEATHER APP</h1>
         
-        <input id='input' type="text" placeholder='enter your city'  onChange={(e) =>setcity(event.target.value)} value={city}/>
-        <button id='button' onClick={getData3}>Get Data3</button>
+        <input className='form-control bg-primary' type="text" placeholder='Enter Your City Here'  onChange={(e) =>setcity(event.target.value)} value={city}/> <br />
+        <button className='form-control fw-bold bg-primary text-light' onClick={getData3}>CLICK</button>
         
-        <div id='divv'>
+        <div className='text-light mt-5'>
         <h1>Name of city: {user3.name}</h1>
         <h1>Timezone: {user3.timezone}</h1>
         <h1>Visibility: {user3.visibility}</h1>
-        <h1>{user3.base}</h1>
-        <h1>{user3.cod}</h1>
-        <h1>{user3.dt}</h1>
+     
+        <h1>Cod: {user3.cod}</h1>
+        <h1>Dt: {user3.dt}</h1>
         </div>
 
         </div>
